@@ -1,0 +1,94 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+/* Calendário Geral*/
+.calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Tabela canlendario */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.dia {
+    grid-column: span 3;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.horario, .materia, .professor {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+.horario {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.materia {
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: #e1f7d5;
+}
+
+
+.professor {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.horario:hover, .materia:hover, .professor:hover {
+    background-color: #e1f7d5;
+    cursor: pointer;
+}
+/* Fim tabela calendario */
+
+
+
